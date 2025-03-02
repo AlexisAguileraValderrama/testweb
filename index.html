@@ -1087,10 +1087,8 @@
 				emailjs.send(serviceID, templateID, templateParams)
 				.then(function(response) {
 					console.log('Success!', response);
-					alert('Your message has been sent successfully!');
 				}, function(error) {
 					console.log('Failed...', error);
-					alert('Something went wrong, please try again.');
 				});
 			})
 			.catch(error => {
